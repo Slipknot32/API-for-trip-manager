@@ -1,7 +1,7 @@
 # Api pour le projet Trip-manger 
 (les deux projets ne sont pas relié ensemble)
 
-## Ce Projet été ma partie Front-end de mon stage d’application suite à une année de formation en développement web et web mobile.
+## Ce Projet été ma partie Back-end de mon stage d’application suite à une année de formation en développement web et web mobile.
 
 --- 
 
