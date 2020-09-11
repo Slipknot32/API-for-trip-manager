@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajout d'un Trajet</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="form-style-5">
+		<h1>Ajout d'une intervention</h1>
+		<form id="addTripsForm" onsubmit="addDataApi()">
+			<fieldset>
+				<legend><span class="number">1</span>Plombier</legend>
+				<div>
+					<label for="plombier">Plombier:</label>
+					<select id="userId" type="select">
+						<option value="Anthony">Anthony</option>
+						<option value="Loïc">Loïc</option>
+						<option value="Thierry">Thierry</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><span class="number">2</span> Intervention</legend>
+				<div>
+					<label for="date">Date :
+						<input id="date" type="date" name="date" >
+					</label>
+				</div>
+				<div>
+					<label for="startTime">Heure début :
+						<input id="startTime" type="time" name="startTime" value="00:00:00">
+					</label>
+					<label for="endTime">Heure fin :
+						<input id="endTime" type="time" name="endTime" value="00:00:00">
+					</label>
+				</div>
+				<div>
+					<label for="title">Titre:
+						<input id="title" type="text" name="title" placeholder="Nature du trajet">
+					</label>
+				</div>
+				<div>
+					<label for="description">Description:
+						<textarea id="description" name="description" >Nom du client: , n° tel: 06.06.06.06.06</textarea>
+					</label>
+				</div>
+				<div>
+					<label for="adresse">Adresse:
+						<input id="address" type="text" name="Adresse" placeholder="Nom de la rue, CP Toulouse">
+					</label>
+				</div>
+			</fieldset>
+			<input type="submit" value="Ajouter" />
+		</form>
+	</div><br/>
+
+	<h1 class="tabTitle">récapitulatif des données</h1>
+	<table id="dataTable">
+		<th colspan="2">Date</th>
+		<th colspan="2">Titre</th>
+		<th colspan="2">Heure de début</th>
+		<th colspan="2">Heure de fin</th>
+		<th colspan="2">Description</th>
+		<th colspan="2">Adresses</th>
+		<th colspan="2">Plombier</th>
+	</table>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
